@@ -36,26 +36,26 @@
 
 * Performance Test Framework : Benchmarking framework to measure the performance against the following Service Level Objectives:
 
-- Latency: time cost from the moment when the server gets the request to last byte of response sent to the users.
+    - Latency: time cost from the moment when the server gets the request to last byte of response sent to the users.
 
-- Throughput: measure how many requests can be served within given time.
+    - Throughput: measure how many requests can be served within given time.
 
-- Scalability: potential scaling capacity (including number of nodes, pods, devices etc. at the edge) under different load conditions.
+    - Scalability: potential scaling capacity (including number of nodes, pods, devices etc. at the edge) under different load conditions.
 
-- CPU Usage: measure the cpu usage of KubeEdge under different load conditions.
+    - CPU Usage: measure the cpu usage of KubeEdge under different load conditions.
 
-- Memory Usage: measure the memory usage of KubeEdge under different load conditions.
+    - Memory Usage: measure the memory usage of KubeEdge under different load conditions.
 
 
 * KubeEdge Installer : Support for basic commands to bootstrap and teardown both KubeEdge cloud and edge components.
 Supported Commands :
-    - kubeedge init : bootstrap cloud prerequisites and cloud components if not already present.
-    - kubeedge join : add edge node in cloud api-server, bootstrap edge prerequisites and edge components if not already present.
-    - kubeedge reset : for cloud node teardown cloud components and prerequites. For edge node teardown edge components and prerequisites.
+    - `kubeedge init` : bootstrap cloud prerequisites and cloud components if not already present.
+    - `kubeedge join` : add edge node in cloud api-server, bootstrap edge prerequisites and edge components if not already present.
+    - `kubeedge reset` : for cloud node teardown cloud components and prerequites. For edge node teardown edge components and prerequisites.
 
 ### Known Issues
 
-* Api Validation for device controller is missing.
+* API Validation for device controller is missing.
 
 * UT/e2e coverage should be improved for cloud part.
 
